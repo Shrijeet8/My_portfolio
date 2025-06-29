@@ -60,3 +60,28 @@ footer {
   color: white;
   margin-top: 40px;
 }
+<head>
+  <style>
+    a {
+      text-decoration: none;
+    }
+
+    a:link {
+      color: blue;
+    }
+
+    a:visited {
+      color: purple;
+    }
+
+    a:hover {
+      color: brown;
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: red;
+    }
+  </style>
+</head>
+
