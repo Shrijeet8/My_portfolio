@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Blog</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9fbfc;
+      color: #2e2e2e;
+      line-height: 1.8;
+      padding: 30px;
+    }
+
+    header {
+      background: linear-gradient(to right, #003366, #004c99);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    nav p {
+      font-style: italic;
+      font-size: 18px;
+      color: #cce6ff;
+    }
+
+    #greeting {
+      font-size: 20px;
+      color: #b3daff;
+      margin-top: 10px;
+    }
+
+    h2, h3, h4, h5 {
+      margin-top: 40px;
+      color: #003366;
+      font-weight: 600;
+      padding-left: 10px;
+      border-left: 4px solid #004c99;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 20px 0;
+      padding: 0 10px;
+    }
+
+    ul {
+      margin: 20px 30px;
+      padding-left: 20px;
+    }
+
+    li {
+      font-size: 17px;
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    section {
+      background: white;
+      border-radius: 12px;
+      padding: 25px 20px;
+      margin: 30px 0;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 10px 20px;
+      background-color: #004c99;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #002d66;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>From JEE failure to building my engineering journey</h1>
+    <nav>
+      <p id="greeting"></p>
+      <p>Hi, I’m a <strong>Mechanical Engineering student</strong> at JSPM Rajarshi Shahu College of Engineering, Tathawade. Like many students, I once dreamed of cracking JEE and getting into an IIT. I gave it everything I had — late-night study sessions, coaching classes, mock tests — but when the results came, I didn’t get the rank I hoped for.</p>
+    </nav>
+  </header>
+
+  <h2>My lowest point</h2>
+  <p>It was hard. I felt lost, like all the effort went to waste. I questioned myself — am I even capable? Did I just waste 2 years? But slowly, I realized something important: <strong>a single exam does not define my future.</strong> What matters is what I do next.</p>
+
+  <h2>Choosing new path</h2>
+  <p>I joined JSPM RSCOE to pursue Mechanical Engineering. At first, I carried that JEE disappointment with me. But I decided I would give my best here and rebuild myself. I got involved in the <strong>Formula Student Team - Redline Racing</strong>, where I work in the <em>Structures domain</em>, designing components using CATIA V5, AutoCAD, and analyzing in ANSYS.</p>
+
+  <section id="discovering web development">
+    <h3>Discovering web development</h3>
+    <p>Alongside mechanical work, I began exploring something new — <strong>Web Development</strong>. I started learning HTML, CSS, and JavaScript. It was confusing at first, but slowly I began to love it. Now, I can build landing pages, blogs, and even my own portfolio!</p>
+  </section>
+
+  <section id="how far I have come">
+    <h4>How far I have come</h4>
+    <ul>
+      <li>Completed projects in both Mechanical and Web fields</li>
+      <li>Created my portfolio website using HTML & CSS</li>
+      <li>Learned CAD tools and started CFD & FEA analysis</li>
+      <li>Scored a CGPA above 8 in 1st year</li>
+      <li>Interned at Harihar Industries for CNC and VMC exposure</li>
+    </ul>
+  </section>
+
+  <section id="my message to students like me">
+    <h5>My message to students like me</h5>
+    <p>If you didn’t crack JEE — it’s okay. That exam doesn’t decide your worth. I didn’t get into an IIT, but now I’m building skills that IITians would admire. It’s not where you start — it’s where you choose to go.</p>
+    <p>Every single day, I learn something new. And I know that by the time I graduate, I’ll be skilled, confident, and ready to create value — in tech, design, or even business.</p>
+    <h3>The Journey Is Mine Now. And I’m Owning It.</h3>
+  </section>
+
+  <!-- ✅ Back to Portfolio Button -->
+  <div style="text-align: center;">
+    <a href="index.html" class="back-btn">← Back to Portfolio</a>
+  </div>
+
+  <!-- ✅ JavaScript Greeting -->
+  <script>
+    let hour = new Date().getHours();
+    let greet = "";
+
+    if (hour < 12) {
+      greet = "Good Morning, Shrijeet here!";
+    } else if (hour < 18) {
+      greet = "Good Afternoon, Shrijeet here!";
+    } else {
+      greet = "Good Evening, Shrijeet here!";
+    }
+
+    document.getElementById("greeting").innerText = greet;
+  </script>
+</body>
+</html>
